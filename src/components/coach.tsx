@@ -20,7 +20,7 @@ const About: FC<IAboutProps> = ({}) => {
                             About Sphinx Muay Thai
                         </span>
                         <h3 className="text-3xl lg:text-4xl">Sameh Ahmed Ali</h3>
-                        <span className="ml-20 text-xl lg:text-2xl text-red-500">
+                        <span className="ml-20 text-xl lg:text-2xl text-red-500 font-light">
                             Founder And Head About
                         </span>
                     </div>

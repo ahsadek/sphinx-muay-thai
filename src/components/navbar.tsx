@@ -73,7 +73,7 @@ const Navbar: FC<INavbarProps> = () => {
                         </svg>
                     )}
                 </button> */}
-                <div className="mr-2" id="navbar-default">
+                <div className="mr-2 lg:mr-0" id="navbar-default">
                     {/* <ul className=" flex p-4 md:p-0 mt-4 border border-slate-100 rounded-lg md:flex-row md:space-x-7 rtl:space-x-reverse md:mt-0 md:border-0">
                         {links.map((link, idx) => (
                             <li key={idx} className="flex items-center justify-center">
