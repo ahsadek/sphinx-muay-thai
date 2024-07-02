@@ -4,12 +4,12 @@ import logo from "../assets/logo.png";
 import { Button } from "@/components/ui/button";
 // import MobileNavbarReveal from "./mobileNavbarReveal";
 
-const links = [
-    { name: "Services", href: "#services" },
-    { name: "Gallery", href: "#gallery" },
-    { name: "Testimonials", href: "#testimonials" },
-    { name: "FAQ", href: "#faq" },
-];
+// const links = [
+//     { name: "Services", href: "#services" },
+//     { name: "Gallery", href: "#gallery" },
+//     { name: "Testimonials", href: "#testimonials" },
+//     { name: "FAQ", href: "#faq" },
+// ];
 
 interface INavbarProps {}
 

@@ -1,6 +1,6 @@
 import { FC, useEffect, useState } from "react";
-import { Mail, Phone, Map, Calendar, MessageCircleMore } from "lucide-react";
-import { MapContainer, Marker, Popup, TileLayer, useMap } from "react-leaflet";
+import { Mail, Phone, Map, Calendar } from "lucide-react";
+import { MapContainer, Marker, Popup, TileLayer } from "react-leaflet";
 import L from "leaflet";
 import MarkerIcon from "../assets/marker.svg";
 
