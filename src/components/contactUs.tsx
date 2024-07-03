@@ -18,13 +18,15 @@ const ContactUs: FC<IContactUsProps> = ({}) => {
     useEffect(() => {
         if (map)
             L.tileLayer("https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png", {
+                attribution:
+                    '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
                 className: "map-tiles",
             }).addTo(map);
     }, [map]);
 
     return (
-        <section id="contact-us" className="bg-zinc-800 scroll-mt-20 lg:scroll-mt-28">
-            <div className="flex flex-col gap-12 items-center pt-10 pb-7 lg:py-20 px-6 lg:px-8 mx-auto max-w-7xl lg:flex-row w-full">
+        <section id="contact-us" className="bg-zinc-800 scroll-mt-[6.25rem] lg:scroll-mt-28">
+            <div className="flex flex-col gap-12 items-center pt-5 pb-7 lg:pt-10 lg:pb-20 px-6 lg:px-8 mx-auto max-w-7xl lg:flex-row w-full">
                 <div className="w-full flex flex-col gap-4">
                     <div>
                         <h2 className="text-xl lg:text-2xl text-zinc-500 font-merienda">
@@ -46,7 +48,7 @@ const ContactUs: FC<IContactUsProps> = ({}) => {
                         </span>
                         <div>
                             <h2 className="text-xl font-light text-red-500">Phone / WhatsApp</h2>
-                            <p className="mt-1 text-zinc-200 text-lg">+20 010 02825696</p>
+                            <p className="mt-1 text-zinc-200 text-lg italic">+20 100 2825696</p>
                         </div>
                     </div>
                     <div className="flex gap-6">
@@ -71,12 +73,27 @@ const ContactUs: FC<IContactUsProps> = ({}) => {
                         </span>
                         <div>
                             <h2 className="text-xl font-light text-red-500">Schedule</h2>
-                            <p className="mt-1 text-zinc-200 text-lg flex flex-col">
-                                <span className="italic">Monday 8:30pm - 10:30pm</span>
-                                <span className="italic">Wednesday 9pm - 11pm</span>
-                                <span className="italic">Thursday 8:30pm - 10:30pm</span>
-                                <span className="italic">Saturday 9pm - 11pm</span>
-                            </p>
+
+                            <div className="flex">
+                                <div className="mt-1 text-zinc-200 text-lg flex flex-col pr-2">
+                                    <span className="">Monday</span>
+                                    <span className="">Wednesday</span>
+                                    <span className="">Thursday</span>
+                                    <span className="">Saturday</span>
+                                </div>
+                                <div className="mt-1 text-zinc-200 text-lg flex flex-col pr-2">
+                                    <span className="">={">"}</span>
+                                    <span className="">={">"}</span>
+                                    <span className="">={">"}</span>
+                                    <span className="">={">"}</span>
+                                </div>
+                                <div className="mt-1 text-zinc-200 text-lg flex flex-col">
+                                    <span className="italic">8:30pm - 10:30pm</span>
+                                    <span className="italic">9:00pm - 11:00pm</span>
+                                    <span className="italic">8:30pm - 10:30pm</span>
+                                    <span className="italic">9:00pm - 11:00pm</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -85,7 +102,7 @@ const ContactUs: FC<IContactUsProps> = ({}) => {
                         center={[30.03667063230524, 31.211023633087557]}
                         zoom={14}
                         scrollWheelZoom={false}
-                        className="h-[25rem] lg:h-[35rem] w-full border-2 border-zinc-200 "
+                        className="h-[25rem] lg:h-[35rem] w-full"
                         ref={setMap}
                     >
                         <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />

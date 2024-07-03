@@ -6,10 +6,10 @@ interface IAboutProps {}
 const About: FC<IAboutProps> = ({}) => {
     return (
         <section id="about" className="scroll-mt-20 bg-zinc-800">
-            <div className="flex flex-col-reverse lg:gap-12 items-center py-10 lg:py-20 px-6 lg:px-8 mx-auto max-w-7xl lg:flex-row w-full">
+            <div className="flex flex-col-reverse lg:gap-12 items-center pt-10 pb-5 lg:pt-20 lg:pb-10 px-6 lg:px-8 mx-auto max-w-7xl lg:flex-row w-full">
                 <div className="w-full h-[25rem] lg:h-[35rem] flex justify-center items-center mt-12 lg:mt-0">
                     <img
-                        className="h-full w-full object-cover border-2 border-zinc-200 rounded-sm"
+                        className="h-full w-full object-cover"
                         src={coachImg}
                         alt="office content 1"
                     />

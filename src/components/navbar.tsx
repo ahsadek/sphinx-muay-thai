@@ -18,7 +18,7 @@ const Navbar: FC<INavbarProps> = () => {
 
     return (
         <header className="fixed w-full z-50 bg-zinc-800 border-zinc-200 border-b shadow-lg">
-            <nav className="max-w-2xl lg:max-w-7xl flex items-center justify-between mx-auto py-4 px-2 lg:px-8">
+            <nav className="max-w-2xl lg:max-w-7xl flex items-center justify-between mx-auto py-4 px-4 lg:px-8">
                 <a
                     href="#"
                     className="flex items-center space-x-3 rtl:space-x-reverse ml-2 lg:ml-0.5 xl:ml-0"
