@@ -19,10 +19,10 @@ const Footer: FC<IFooterProps> = ({}) => {
                                 <img className="h-16 lg:h-20" src={logo} alt="office content 1" />
                             </div>
                         </a>
-                        <ul className="flex flex-wrap items-center lg:mt-16 text-sm font-medium text-zinc-200 sm:mb-0 ">
+                        <ul className="flex flex-wrap items-center lg:mt-6 text-sm font-medium text-zinc-200 sm:mb-0 ">
                             <li>
                                 <span
-                                    className="hover:underline me-4 md:me-6 scroll-smooth"
+                                    className="hover:underline me-4 md:me-6 scroll-smooth cursor-pointer"
                                     onClick={() => {
                                         const contactUsElement =
                                             document.getElementById("contact-us");
@@ -46,7 +46,7 @@ const Footer: FC<IFooterProps> = ({}) => {
                                             });
                                         }
                                     }}
-                                    className="hover:underline scroll-smooth"
+                                    className="hover:underline scroll-smooth cursor-pointer"
                                 >
                                     About
                                 </a>
@@ -54,12 +54,12 @@ const Footer: FC<IFooterProps> = ({}) => {
                         </ul>
                     </div>
                     <ul className="flex flex-col gap-4">
-                        <li>
+                        <a href="https://www.facebook.com/SphnxMuaythi/">
                             <img src={facebook} />
-                        </li>
-                        <li>
+                        </a>
+                        <a href="https://www.instagram.com/sphinx_muay_thai_team/">
                             <img src={instagram} />
-                        </li>
+                        </a>
                     </ul>
                 </div>
                 <hr className="my-6 border-zinc-200 sm:mx-auto lg:my-8" />
