@@ -48,7 +48,7 @@ const ContactUs: FC<IContactUsProps> = ({}) => {
                         </span>
                         <div>
                             <h2 className="text-xl font-light text-red-500">Phone / WhatsApp</h2>
-                            <p className="mt-1 text-zinc-200 text-lg italic">+20 100 2825696</p>
+                            <p className="mt-1 text-sky-400 text-lg">+20 100 2825696</p>
                         </div>
                     </div>
                     <div className="flex gap-6">
@@ -74,25 +74,11 @@ const ContactUs: FC<IContactUsProps> = ({}) => {
                         <div>
                             <h2 className="text-xl font-light text-red-500">Schedule</h2>
 
-                            <div className="flex">
-                                <div className="mt-1 text-zinc-200 text-lg flex flex-col pr-2">
-                                    <span className="">Monday</span>
-                                    <span className="">Wednesday</span>
-                                    <span className="">Thursday</span>
-                                    <span className="">Saturday</span>
-                                </div>
-                                <div className="mt-1 text-zinc-200 text-lg flex flex-col pr-2">
-                                    <span className="">={">"}</span>
-                                    <span className="">={">"}</span>
-                                    <span className="">={">"}</span>
-                                    <span className="">={">"}</span>
-                                </div>
-                                <div className="mt-1 text-zinc-200 text-lg flex flex-col">
-                                    <span className="italic">8:30pm - 10:30pm</span>
-                                    <span className="italic">9:00pm - 11:00pm</span>
-                                    <span className="italic">8:30pm - 10:30pm</span>
-                                    <span className="italic">9:00pm - 11:00pm</span>
-                                </div>
+                            <div className="mt-1 text-zinc-200 text-lg flex flex-col pr-2">
+                                <span className="">Monday ={">"} 8:30pm - 10:30pm</span>
+                                <span className="">Wednesday ={">"} 9:00pm - 11:00pm</span>
+                                <span className="">Thursday ={">"} 8:30pm - 10:30pm</span>
+                                <span className="">Saturday ={">"} 9:00pm - 11:00pm</span>
                             </div>
                         </div>
                     </div>
