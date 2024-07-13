@@ -2,6 +2,7 @@ import { FC } from "react";
 import logo from "../assets/logo.png";
 import facebook from "../assets/facebook.svg";
 import instagram from "../assets/instagram.svg";
+import youtube from "../assets/youtube.svg";
 
 interface IFooterProps {}
 
@@ -53,7 +54,10 @@ const Footer: FC<IFooterProps> = ({}) => {
                             </li>
                         </ul>
                     </div>
-                    <ul className="flex flex-col gap-4">
+                    <ul className="flex flex-col gap-2">
+                        <a href="https://www.youtube.com/@sphinxmuaythaiteam">
+                            <img src={youtube} />
+                        </a>
                         <a href="https://www.facebook.com/SphnxMuaythi/">
                             <img src={facebook} />
                         </a>
