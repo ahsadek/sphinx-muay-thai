@@ -76,11 +76,11 @@ const About: FC<IAboutProps> = ({}) => {
                             </div>
                             <div className="hidden lg:block mt-1 h-[9.1rem] border-r border-zinc-500"></div>
                             <div>
-                                <h2 className="text-2xl font-light text-zinc-200 mb-4">
+                                <h2 className="text-2xl font-light text-zinc-200 mb-3 lg:mb-4">
                                     Personal Classes :
                                 </h2>
                                 <Button
-                                    className="ml-4 w-52 lg:w-40"
+                                    className="ml-4 w-48 lg:w-44"
                                     variant="outline"
                                     size="lg"
                                     onClick={() => {
