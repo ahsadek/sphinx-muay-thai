@@ -90,7 +90,7 @@ const ContactUs: FC<IContactUsProps> = ({}) => {
                                 <Heart className="w-6 h-6" />
                             </span>
                             <div>
-                                <h2 className="text-xl font-light text-zinc-200 mb-4">Socials</h2>
+                                <h2 className="text-xl font-light text-zinc-200 mb-3">Socials</h2>
                                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
                                     <Button
                                         className="w-52 lg:w-40 text-zinc-300"
