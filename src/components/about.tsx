@@ -80,7 +80,7 @@ const About: FC<IAboutProps> = ({}) => {
                                     Personal Classes :
                                 </h2>
                                 <Button
-                                    className="ml-4"
+                                    className="ml-4 w-52 lg:w-40"
                                     variant="outline"
                                     size="lg"
                                     onClick={() => {
