@@ -7,7 +7,7 @@ function App() {
     return (
         <main className="bg-zinc-800 h-screen">
             <Hero />
-            <div className="absolute w-full z-10 mt-[55rem] lg:mt-[61rem]">
+            <div className="absolute w-full z-10 mt-[46rem] lg:mt-[61rem]">
                 <About />
                 <ContactUs />
                 <Footer />
