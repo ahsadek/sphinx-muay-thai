@@ -23,7 +23,7 @@ const Hero: FC<IHeroProps> = () => {
         <div className="fixed w-full flex flex-col items-center justify-center mt-24 lg:mt-28">
             <img
                 src={heroImg1}
-                className="mt-5 lg:mt-10 w-full h-[19rem] lg:h-[54rem] object-scale-down opacity-20"
+                className="mt-5 lg:mt-10 w-full h-[18rem] lg:h-[54rem] object-scale-down opacity-20"
                 style={{
                     maskImage:
                         "linear-gradient(to bottom, rgba(0, 0, 0, 1) 90%, rgba(0, 0, 0, 0) 100%)",
