@@ -22,29 +22,29 @@ const Hero: FC<IHeroProps> = () => {
     return (
         <div className="fixed w-full flex flex-col items-center justify-center mt-24 lg:mt-28">
             <img
-                src={heroImg2}
+                src={heroImg1}
                 className="mt-5 lg:mt-10 w-full h-[19rem] lg:h-[54rem] object-scale-down opacity-20"
                 style={{
                     maskImage:
-                        "linear-gradient(to bottom, rgba(0, 0, 0, 1) 90%, rgba(0, 0, 0, 0.05) 100%)",
+                        "linear-gradient(to bottom, rgba(0, 0, 0, 1) 90%, rgba(0, 0, 0, 0) 100%)",
                     WebkitMaskImage:
-                        "linear-gradient(to bottom, rgba(0, 0, 0, 1) 90%, rgba(0, 0, 0, 0.1) 100%)",
+                        "linear-gradient(to bottom, rgba(0, 0, 0, 1) 90%, rgba(0, 0, 0, 0) 100%)",
                 }}
             />
             {isMobile && (
                 <img
-                    src={heroImg1}
-                    className="mt-16 lg:mt-10 w-full h-[20rem] lg:h-[54rem] object-scale-down opacity-20"
+                    src={heroImg2}
+                    className="mt-16 lg:mt-10 w-full h-[16rem] lg:h-[54rem] object-scale-down opacity-20"
                     style={{
                         maskImage:
-                            "linear-gradient(to top, rgba(0, 0, 0, 0.1) 20%, rgba(0, 0, 0, 1) 100%)",
+                            "linear-gradient(to bottom, rgba(0, 0, 0, 1) 90%, rgba(0, 0, 0, 0) 100%)",
                         WebkitMaskImage:
-                            "linear-gradient(to top, rgba(0, 0, 0, 0.1) 20%, rgba(0, 0, 0, 1) 100%)",
+                            "linear-gradient(to bottom, rgba(0, 0, 0, 1) 90%, rgba(0, 0, 0, 0) 100%)",
                     }}
                 />
             )}
             <div className="flex items-center justify-center absolute font-merienda">
-                <h1 className="mt-3 lg:-mt-10 text-zinc-200 text-3xl lg:text-5xl tracking-tighter">
+                <h1 className="mt-16 lg:-mt-10 text-zinc-200 text-3xl lg:text-5xl tracking-tighter">
                     The Art Of Eight Limbs
                 </h1>
             </div>
