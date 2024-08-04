@@ -31,7 +31,7 @@ const Hero: FC<IHeroProps> = () => {
         >
             <img
                 src={heroImg1}
-                className="-ml-20 -mb-10 lg:ml-0 lg:mb-0 mt-4 lg:mt-10 w-full h-[17rem] lg:h-[52rem] object-scale-down opacity-40"
+                className="-ml-24 -mb-10 lg:ml-0 lg:mb-0 mt-4 lg:mt-10 w-full h-[17rem] lg:h-[52rem] object-scale-down opacity-40"
                 style={{
                     maskImage:
                         "linear-gradient(to bottom, rgba(0, 0, 0, 1) 70%, rgba(0, 0, 0, 0) 100%)",
