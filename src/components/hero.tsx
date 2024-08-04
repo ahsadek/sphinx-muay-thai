@@ -1,7 +1,6 @@
 import { FC, useState, useEffect } from "react";
 import heroImg1 from "../assets/heroImg1.png";
 import heroImg2 from "../assets/heroImg2.png";
-import blob1 from "/blob1.svg";
 
 interface IHeroProps {}
 
