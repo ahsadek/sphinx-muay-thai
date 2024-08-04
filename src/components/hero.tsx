@@ -42,7 +42,7 @@ const Hero: FC<IHeroProps> = () => {
             {isMobile && (
                 <img
                     src={heroImg2}
-                    className="ml-20 lg:ml-0 mt-24 lg:mt-10 w-full h-[16rem] lg:h-[54rem] object-scale-down opacity-40"
+                    className="ml-28 lg:ml-0 mt-28 lg:mt-10 w-full h-[16rem] lg:h-[54rem] object-scale-down opacity-40"
                     style={{
                         maskImage:
                             "linear-gradient(to bottom, rgba(0, 0, 0, 1) 80%, rgba(0, 0, 0, 0) 100%)",
