@@ -51,7 +51,7 @@ const Hero: FC<IHeroProps> = () => {
                                 "linear-gradient(to bottom, rgba(0, 0, 0, 1) 80%, rgba(0, 0, 0, 0) 100%)",
                         }}
                     />
-                    <span className="font-merienda rotate-90 absolute left-0 bottom-0 text-xl mb-[6.5rem] -ml-[6.1rem] text-zinc-900">
+                    <span className="font-merienda rotate-90 absolute left-0 bottom-0 text-xl mb-[6.5rem] -ml-[6rem] text-zinc-700">
                         The Art Of Eight Limbs
                     </span>
                     {/* <img
