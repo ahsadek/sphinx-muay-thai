@@ -1,5 +1,5 @@
 import { FC } from "react";
-import coachImg from "../assets/coachImg.jpg";
+import coachImg from "../assets/coachImg.webp";
 import { Button } from "./ui/button";
 
 interface IAboutProps {}
@@ -8,9 +8,17 @@ const About: FC<IAboutProps> = ({}) => {
     return (
         <section id="about" className="scroll-mt-20 bg-zinc-800">
             <div className="flex flex-col-reverse lg:gap-12 items-center pt-10 pb-5 lg:pt-20 lg:pb-10 px-6 lg:px-8 mx-auto max-w-7xl lg:flex-row w-full">
-                <div className="w-full h-[25rem] lg:h-[35rem] flex justify-center items-center mt-12 lg:mt-0">
+                <div
+                    className="w-full h-[25rem] lg:h-[35rem] flex justify-center items-center mt-12 lg:mt-0 border rounded p-7 pb-0"
+                    style={{
+                        backgroundImage: `url("/coachImgBg.svg")`,
+                        backgroundSize: "cover",
+                        backgroundPosition: "center",
+                        backgroundRepeat: "no-repeat",
+                    }}
+                >
                     <img
-                        className="h-full w-full object-cover rounded-sm"
+                        className="h-full w-full object-contain rounded-sm opacity-50"
                         src={coachImg}
                         alt="office content 1"
                     />

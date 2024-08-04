@@ -1,6 +1,6 @@
 import { FC, useState, useEffect } from "react";
-import heroImg1 from "../assets/heroImg1.png";
-import heroImg2 from "../assets/heroImg2.png";
+import heroImg1 from "../assets/heroImg1.webp";
+import heroImg2 from "../assets/heroImg2.webp";
 
 interface IHeroProps {}
 
@@ -51,6 +51,16 @@ const Hero: FC<IHeroProps> = () => {
                                 "linear-gradient(to bottom, rgba(0, 0, 0, 1) 80%, rgba(0, 0, 0, 0) 100%)",
                         }}
                     />
+                    {/* <img
+                        src={heroImg3}
+                        className="ml-44 lg:ml-0 mt-28 lg:mt-10 w-full h-[16rem] lg:h-[54rem] object-scale-down opacity-40"
+                        style={{
+                            maskImage:
+                                "linear-gradient(to bottom, rgba(0, 0, 0, 1) 80%, rgba(0, 0, 0, 0) 100%)",
+                            WebkitMaskImage:
+                                "linear-gradient(to bottom, rgba(0, 0, 0, 1) 80%, rgba(0, 0, 0, 0) 100%)",
+                        }}
+                    /> */}
                     <span className="font-merienda rotate-90 absolute left-0 bottom-0 text-xl mb-[6.5rem] -ml-[6rem] text-zinc-700">
                         The Art Of Eight Limbs
                     </span>
