@@ -1,7 +1,6 @@
 import { FC, useState, useEffect } from "react";
 import heroImg1 from "../assets/heroImg1.png";
 import heroImg2 from "../assets/heroImg2.png";
-import heroBg from "../assets/heroBg.svg";
 
 interface IHeroProps {}
 
@@ -24,7 +23,7 @@ const Hero: FC<IHeroProps> = () => {
         <div
             className="fixed w-full flex flex-col items-center justify-center object-contain mt-24 lg:mt-28"
             style={{
-                backgroundImage: `url(${heroBg})`,
+                backgroundImage: `url("/heroBg.svg")`,
                 backgroundSize: "cover",
                 backgroundPosition: "left",
                 backgroundRepeat: "no-repeat",
