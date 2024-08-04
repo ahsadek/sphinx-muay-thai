@@ -52,7 +52,7 @@ const Hero: FC<IHeroProps> = () => {
                         }}
                     />
                     <span
-                        className="font-merienda rotate-90 absolute left-0 bottom-0 text-2xl mb-[8.2rem] -ml-[7.2rem]"
+                        className="font-merienda rotate-90 absolute left-0 bottom-0 text-xl mb-[9.2rem] -ml-[6.1rem]"
                         style={{ color: "#1D1D20" }}
                     >
                         <span className="text-zinc-800">The</span> Art Of Eight Limbs
