@@ -54,7 +54,7 @@ const Hero: FC<IHeroProps> = () => {
                     />
                     <img
                         src={blob1}
-                        className="absolute left-0 h-44 -ml-14 mt-[19rem] rotate-[60deg]"
+                        className="absolute left-0 h-44 -ml-20 mt-[19rem] rotate-[60deg]"
                     />
                     <img
                         src={blob1}
