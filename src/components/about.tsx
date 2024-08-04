@@ -18,7 +18,7 @@ const About: FC<IAboutProps> = ({}) => {
                     }}
                 >
                     <img
-                        className="h-full w-full object-contain rounded-sm opacity-50"
+                        className="h-full w-full object-contain rounded-sm opacity-60"
                         src={coachImg}
                         alt="office content 1"
                     />
