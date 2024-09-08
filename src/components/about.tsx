@@ -26,23 +26,30 @@ const About: FC<IAboutProps> = ({}) => {
                 <div className="flex flex-col gap-6 w-full">
                     <div className="w-full font-light text-zinc-200 text-lg flex flex-col gap-5">
                         <div>
-                            <span className="text-xl lg:text-2xl text-zinc-500 mb-1 font-merienda">
-                                About us
-                            </span>
-                            <h3 className="text-3xl lg:text-4xl">Sameh Ahmed Ali</h3>
+                        <span className="text-xl lg:text-2xl text-zinc-500 mb-1 font-merienda">
+                            Coach
+                        </span>
+                            
+                        <h1
+                         className="fusion-title-heading title-heading-left fusion-responsive-typography-calculated font-bold text-white"
+                         style={{ margin: 0, fontSize: 40, lineHeight: 1.2 }}
+                        >   
+                        Sameh Ahmed Ali
+                        </h1>
+
+
                             <span className="ml-20 text-xl lg:text-2xl text-red-500 font-light">
-                                Founder And Head Coach
+                            BSc. (Hons) – Founder of Sphinx Muay Thai 
                             </span>
                         </div>
                         <p className="text-xl">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima eveniet
-                            assumenda itaque quasi laudantium sequi harum molestiae adipisci
-                            mollitia tempora qui.
+                        I’m a family man from the Egypt, former mechanical  engineer, African Muay Thai silver medallist,
+                         pro Thai boxer, a Muay Thai coach, A physiotherapist, and the go-to expert on Muay Thai performance training.
                         </p>
                         <p className="text-xl">
-                            Alias eveniet incidunt quasi vel hic officiis voluptates itaque ducimus.
-                            Perspiciatis qui sapiente deserunt praesentium aspernatur accusamus,
-                            incidunt repudiandae nihil.
+                        I’m here to help ambitious fighters and coaches take their game to the next level by bridging the gap
+                         between strength & conditioning,
+                         performance science, and Muay Thai.
                         </p>
                     </div>
                     <div className="mt-4 lg:mt-0">
