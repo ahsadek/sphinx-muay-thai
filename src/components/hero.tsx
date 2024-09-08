@@ -32,7 +32,7 @@ const Hero: FC<IHeroProps> = () => {
                 className="relative w-3/4 h-3/4 flex items-center justify-center"
                 initial={{ opacity: 0 }} // Start with opacity 0
                 animate={{ opacity: 1 }} // Fade in to opacity 1
-                transition={{ duration: 1 }} // Transition duration of 1 second
+                transition={{ duration: 5 }} // Transition duration of 1 second
                 key={currentImage} // Key to trigger re-render when image changes
             >
                 <img
