@@ -1,7 +1,7 @@
 import * as React from "react";
 import { Slot } from "@radix-ui/react-slot";
-import { cva, type VariantProps } from "class-variance-authority";
-import { motion, HTMLMotionProps } from "framer-motion";
+import { cva } from "class-variance-authority";
+import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
 
 // Define the button variants using CVA (class variance authority)
@@ -31,29 +31,20 @@ const buttonVariants = cva(
   }
 );
 
-// Combine HTMLButtonElement and MotionProps in the ButtonProps
-export interface ButtonProps
-  extends HTMLMotionProps<"button">,
-    VariantProps<typeof buttonVariants> {
-  asChild?: boolean;
-}
+// Create the Button component
+const Button = ({ className, variant, size, asChild = false, ...props }) => {
+  const Comp = asChild ? Slot : motion.button;
 
-const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
-  ({ className, variant, size, asChild = false, ...props }, ref) => {
-    const Comp = asChild ? Slot : motion.button; // Use motion.button directly
-
-    return (
-      <Comp
-        whileHover={{ scale: 1.05 }} // Smooth pop animation on hover
-        whileTap={{ scale: 0.95 }}   // Slight tap animation
-        transition={{ type: "spring", stiffness: 300 }}
-        className={cn(buttonVariants({ variant, size, className }))}
-        ref={ref}
-        {...props} // Spread both HTML and motion props
-      />
-    );
-  }
-);
+  return (
+    <Comp
+      whileHover={{ scale: 1.05 }} // Smooth pop animation on hover
+      whileTap={{ scale: 0.95 }}   // Slight tap animation
+      transition={{ type: "spring", stiffness: 300 }}
+      className={cn(buttonVariants({ variant, size, className }))}
+      {...props} // Spread both HTML and motion props
+    />
+  );
+};
 
 Button.displayName = "Button";
 

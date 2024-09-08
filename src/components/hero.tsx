@@ -1,79 +1,46 @@
 import { FC, useState, useEffect } from "react";
+import { motion } from "framer-motion";
 import heroImg1 from "../assets/heroImg1.webp";
 import heroImg2 from "../assets/heroImg2.webp";
 
 interface IHeroProps {}
 
 const Hero: FC<IHeroProps> = () => {
-    const [isMobile, setIsMobile] = useState(false);
+    const [currentImage, setCurrentImage] = useState(heroImg1);
 
     useEffect(() => {
-        const checkScreenSize = () => {
-            setIsMobile(window.innerWidth <= 768); // Example breakpoint for mobile
-        };
+        const imageInterval = setInterval(() => {
+            setCurrentImage((prevImage) =>
+                prevImage === heroImg1 ? heroImg2 : heroImg1
+            );
+        }, 5000); // Change image every 5 seconds
 
-        checkScreenSize(); // Initial check
-        window.addEventListener("resize", checkScreenSize); // Update on resize
-
-        return () => {
-            window.removeEventListener("resize", checkScreenSize);
-        };
+        return () => clearInterval(imageInterval); // Cleanup interval on unmount
     }, []);
+
     return (
         <div
-            className="fixed w-full flex flex-col items-center justify-center object-contain mt-24 lg:mt-28"
+            className="fixed w-full h-screen flex items-center justify-center overflow-hidden bg-cover bg-center"
             style={{
                 backgroundImage: `url("/heroBg.svg")`,
                 backgroundSize: "cover",
-                backgroundPosition: "left",
+                backgroundPosition: "center",
                 backgroundRepeat: "no-repeat",
             }}
         >
-            <img
-                src={heroImg1}
-                className="-ml-20 -mb-10 lg:ml-0 lg:mb-0 mt-4 lg:mt-10 w-full h-[17rem] lg:h-[52rem] object-scale-down opacity-40"
-                style={{
-                    maskImage:
-                        "linear-gradient(to bottom, rgba(0, 0, 0, 1) 70%, rgba(0, 0, 0, 0) 100%)",
-                    WebkitMaskImage:
-                        "linear-gradient(to bottom, rgba(0, 0, 0, 1) 70%, rgba(0, 0, 0, 0) 100%)",
-                }}
-            />
-            {isMobile && (
-                <>
-                    <img
-                        src={heroImg2}
-                        className="ml-32 lg:ml-0 mt-28 lg:mt-10 w-full h-[15.8rem] lg:h-[54rem] object-scale-down opacity-40"
-                        style={{
-                            maskImage:
-                                "linear-gradient(to bottom, rgba(0, 0, 0, 1) 80%, rgba(0, 0, 0, 0) 100%)",
-                            WebkitMaskImage:
-                                "linear-gradient(to bottom, rgba(0, 0, 0, 1) 80%, rgba(0, 0, 0, 0) 100%)",
-                        }}
-                    />
-                    {/* <img
-                        src={heroImg3}
-                        className="ml-44 lg:ml-0 mt-28 lg:mt-10 w-full h-[16rem] lg:h-[54rem] object-scale-down opacity-40"
-                        style={{
-                            maskImage:
-                                "linear-gradient(to bottom, rgba(0, 0, 0, 1) 80%, rgba(0, 0, 0, 0) 100%)",
-                            WebkitMaskImage:
-                                "linear-gradient(to bottom, rgba(0, 0, 0, 1) 80%, rgba(0, 0, 0, 0) 100%)",
-                        }}
-                    /> */}
-                    <span className="font-merienda rotate-90 absolute left-0 bottom-0 text-xl mb-[6.5rem] -ml-[6rem] text-zinc-700">
-                        The Art Of Eight Limbs
-                    </span>
-                    {/* <img
-                        src={blob1}
-                        className="absolute left-0 h-44 -ml-20 mt-[19rem] rotate-[60deg]"
-                    />
-                    <img
-                        src={blob1}
-                        className="absolute left-0 bottom-0 h-12 mb-7 -ml-3 rotate-[60deg]"
-                    /> */}
-                </>
-            )}
+            <motion.div
+                className="relative w-3/4 h-3/4 flex items-center justify-center"
+                initial={{ opacity: 0 }} // Start with opacity 0
+                animate={{ opacity: 1 }} // Fade in to opacity 1
+                transition={{ duration: 1 }} // Transition duration of 1 second
+                key={currentImage} // Key to trigger re-render when image changes
+            >
+                <img
+                    src={currentImage}
+                    className="object-contain w-full h-full filter brightness-50"
+                    alt="Hero Image"
+                />
+            </motion.div>
             <div className="flex items-center justify-center absolute font-merienda">
                 <h1 className="mt-8 lg:-mt-10 text-zinc-200 text-3xl lg:text-5xl tracking-tighter">
                     Sphinx <span className="text-red-500">Muay</span> Thai
