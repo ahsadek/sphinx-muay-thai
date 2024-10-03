@@ -39,7 +39,7 @@ const About: FC<IAboutProps> = ({}) => {
 
 
                             <span className="ml-20 text-xl lg:text-2xl text-red-500 font-light">
-                            BSc. (Hons) – Founder of Sphinx Muay Thai 
+                             Founder of Sphinx Muay Thai 
                             </span>
                         </div>
                         <p className="text-xl">
