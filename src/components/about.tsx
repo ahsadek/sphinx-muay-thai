@@ -39,12 +39,13 @@ const About: FC<IAboutProps> = ({}) => {
 
 
                             <span className="ml-20 text-xl lg:text-2xl text-red-500 font-light">
-                            BSc. (Hons) – Founder of Sphinx Muay Thai 
+                             Founder of Sphinx Muay Thai 
                             </span>
                         </div>
                         <p className="text-xl">
-                        I’m a family man from the Egypt, former mechanical  engineer, African Muay Thai silver medallist,
-                         pro Thai boxer, a Muay Thai coach, A physiotherapist, and the go-to expert on Muay Thai performance training.
+                        Coach Sameh is a professional Muay Thai coach, certified in Muay Thai training by the Egyptian Muay Thai Federation and the Kickboxing Egyptian Federation
+                        , with 13 years of professional training experience. He has a background as both an MMA and Muay Thai fighter,
+                         bringing formal fighting expertise to his coaching.
                         </p>
                         <p className="text-xl">
                         I’m here to help ambitious fighters and coaches take their game to the next level by bridging the gap
