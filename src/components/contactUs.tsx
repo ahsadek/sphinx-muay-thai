@@ -65,7 +65,7 @@ const ContactUs: FC<IContactUsProps> = ({}) => {
                                     href="tel:+201002825696"
                                     className="text-red-100 font-semibold text-lg"
                                 >
-                                    +20 100 2825696
+                                    +20 100 6809882
                                 </a>
                             </div>
                         </div>
